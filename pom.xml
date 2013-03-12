@@ -111,8 +111,8 @@
 
     <scm>
         <url>https://github.com/crayfellow/native-dependency-maven-plugin-base</url>
-        <developerConnection>scm:git:https://github.com/crayfellow/native-dependency-maven-plugin-base.git</developerConnection>
-        <connection>scm:git:https://github.com/crayfellow/native-dependency-maven-plugin-base.git</connection>
+        <developerConnection>scm:git:git@github.com:crayfellow/native-dependency-maven-plugin-base.git</developerConnection>
+        <connection>scm:git:git@github.com:crayfellow/native-dependency-maven-plugin-base.git</connection>
     </scm>
 
     <repositories>
