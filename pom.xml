@@ -15,6 +15,10 @@
             <name>Aleksey Fomkin</name>
             <email>aleksey.fomkin@gmail.com</email>
         </developer>
+        <developer>
+            <name>crayfellow</name>
+            <email>elearningeek@gmail.com</email>
+        </developer>
     </developers>
 
     <licenses>
@@ -105,19 +109,36 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        <url>https://github.com/crayfellow/native-dependency-maven-plugin-base</url>
+        <developerConnection>scm:git:https://github.com/crayfellow/native-dependency-maven-plugin-base.git</developerConnection>
+        <connection>scm:git:https://github.com/crayfellow/native-dependency-maven-plugin-base.git</connection>
+    </scm>
+
+    <repositories>
+      <repository>
+        <id>releases</id>
+        <url>${releases.url}</url>
+      </repository>
+      <repository>
+        <id>snapshots</id>
+        <url>${snapshots.url}</url>
+      </repository>
+    </repositories>
+
     <distributionManagement>
-        <repository>
-            <!-- I know, I know! -->
-            <id>yelbota-dropbox-repository</id>
-            <url>file:///Users/yelbota/Dropbox/Public/maven</url>
-        </repository>
+      <repository>
+        <id>releases</id>
+        <url>${releases.url}</url>
+      </repository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <url>${snapshots.url}</url>
+      </snapshotRepository>
     </distributionManagement>
 
-    <scm>
-        <connection>scm:git:git@github.com:yelbota/native-dependency-maven-plugin-base.git</connection>
-        <url>scm:git:git@github.com:yelbota/native-dependency-maven-plugin-base.git</url>
-        <developerConnection>scm:git:git@github.com:yelbota/native-dependency-maven-plugin-base.git
-        </developerConnection>
-    </scm>
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>
