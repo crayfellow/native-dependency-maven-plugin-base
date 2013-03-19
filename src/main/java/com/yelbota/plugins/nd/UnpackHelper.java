@@ -79,7 +79,7 @@ public class UnpackHelper {
      * Unpack `artifact` to `directory`.
      * @throws UnpackHelperException
      */
-    private void unpack(File directory, String artifactType, File artifactFile,
+    public void unpack(File directory, String artifactType, File artifactFile,
                        Map<String, UnpackMethod> unpackMethods,
                        Log log) throws UnpackHelperException {
 
